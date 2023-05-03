@@ -16,12 +16,95 @@
       src="https://kit.fontawesome.com/c9219fe591.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="ast/js/main.js"></script>
+
     <link rel="stylesheet" href="ast/css/main.css" />
   </head>
   <body>
+    <header>
+      <div class="container-fluid mobile-nav-items hidden no-opacity">
+        <img src="ast/img/mdjlogo.png" alt="" class="mobile-nav-items--logo" />
+        <a href="#welcome" class="mobile-nav-items--item no-opacity"
+          ><i class="fa-solid fa-house mobile-nav-items--icon"></i>Home</a
+        >
+        <a href="#work" class="mobile-nav-items--item no-opacity"
+          ><i class="fa-solid fa-briefcase mobile-nav-items--icon"></i>Work</a
+        >
+        <a href="#skills" class="mobile-nav-items--item no-opacity"
+          ><i class="fa-solid fa-gear mobile-nav-items--icon"></i>Skills</a
+        >
+        <a href="#about" class="mobile-nav-items--item no-opacity"
+          ><i class="fa-solid fa-user mobile-nav-items--icon"></i>About</a
+        >
+        <div class="social">
+          <a
+            href="https://github.com/dambus"
+            target="_blank"
+            class="fa-brands fa-github"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/milandjumic/"
+            target="_blank"
+            class="fa-brands fa-linkedin"
+          ></a>
+          <a
+            href="https://www.instagram.com/dambusns/"
+            target="_blank"
+            class="fa-brands fa-instagram"
+          ></a>
+          <a
+            href="https://www.facebook.com/milandjumic"
+            class="fa-brands fa-facebook"
+            target="_blank"
+          ></a>
+          <a href="mailto:dambusns@gmail.com" class="fa-solid fa-at"></a>
+        </div>
+      </div>
+
+      <div class="header container" id="top-of-page">
+        <img src="ast/img/mdjlogo.png" alt="logo" class="header__logo" />
+        <div class="nav__mobile container-fluid">
+          <div class="nav__mobile--menu-icon">
+            <div class="toggle-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav">
+          <a href="#welcome" class="btn__nav" data-anchor="#welcome">home</a>
+          <a href="#work" class="btn__nav" data-anchor="#work">work</a>
+          <a href="#skills" class="btn__nav" data-anchor="#skills">skills</a>
+          <a href="#about" class="btn__nav" data-anchor="#about">about</a>
+        </div>
+      </div>
+    </header>
     <section id="landing" class="container">
-      <div class="landing"></div>
+      <div class="landing">
+        <div class="landing--upper">
+          <div class="landing--upper-left">
+            <img
+              src="ast/img/landing-image.png"
+              alt="laptop with code and coffee illustration"
+              class=""
+            />
+          </div>
+          <div class="landing--upper-right">
+            <h4>hi, my name is</h4>
+            <h1 class="mb-4"><span>Milan</span></h1>
+            <h1>
+              I <span>DESIGN</span> and <br />
+              <span>CODE</span> beautifull <br />
+              <span>STUFF</span> for web
+            </h1>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="container"></div>
+    <section id="work"></section>
+    <section id="skills"></section>
+    <section id="about"></section>
   </body>
 </html>
