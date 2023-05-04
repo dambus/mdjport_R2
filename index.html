@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="ast/js/main.js"></script>
+    <script type="module" src="ast/js/popProjects.js"></script>
 
     <link rel="stylesheet" href="ast/css/main.css" />
   </head>
@@ -81,7 +82,7 @@
         </div>
       </div>
     </header>
-    <section id="landing" class="container">
+    <section id="welcome" class="container">
       <div class="landing">
         <div class="landing--upper">
           <div class="landing--upper-left">
@@ -103,8 +104,117 @@
         </div>
       </div>
     </section>
-    <section id="work"></section>
-    <section id="skills"></section>
-    <section id="about"></section>
+    <section id="work" class="work container">
+      <div class="section__heading">
+        <h1>my work.</h1>
+      </div>
+      <div class="section__content">
+        <div class="cards" id="projectCards"></div>
+      </div>
+    </section>
+    <section id="skills" class="skills container">
+      <div class="section__heading">
+        <h1>skills.</h1>
+      </div>
+      <div class="section__content">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 content-text-r">
+            <h4>considered to be:</h4>
+            <h1>CREATIVE</h1>
+            <h1><small>SOMEWHAT</small> TALENTED</h1>
+            <h1>
+              OUT OF THE BOX <br />
+              THINKER
+            </h1>
+            <div class="v-spacer"></div>
+            <h4>great communicator with:</h4>
+            <h1>COMPUTERS</h1>
+            <h1>GOOGLE</h1>
+            <h1>MOST HUMANS</h1>
+            <div class="v-spacer"></div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="gal">
+              <div class="gal__1-1">
+                <img src="ast/img/unsplash:_bKeoqjIumw.png" alt="" />
+              </div>
+              <div class="gal__1-2">
+                <img src="ast/img/unsplash:fIq0tET6llw.png" alt="" />
+              </div>
+              <div class="gal__2-1">
+                <img src="ast/img/image 3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="spacer my-5"></div>
+          <div class="col-xs-12 col-md-6 offset-md-3 content-text-r mt-5">
+            <h4>oh, yeah, I also</h4>
+            <h1>KNOW FEW THINGS ABOUT</h1>
+            <div class="tech-icons">
+              <div class="skills__box">
+                <div class="skills__box--skill-icon">
+                  <div class="badge_good">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </div>
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skills__box--skill-icon">
+                  <div class="badge_good">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </div>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skills__box--skill-icon">
+                  <i class="fa-brands fa-sass"></i>
+                </div>
+                <div class="skills__box--skill-icon">
+                  <div class="badge_ok">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div class="skills__box--skill-icon">
+                  <div class="badge_learning">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="skills__box--skill-icon">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="skills container">
+      <div class="section__heading">
+        <h1>about.</h1>
+      </div>
+      <div class="section__content row">
+        <div class="col-xs-12 col-md-6">
+          <img src="ast/img/dev_meeting.png" alt="" class="shadowed" />
+        </div>
+        <div class="col-xs-12 col-md-6 content-text-l mt-5">
+          <h4>Hello everyone,</h4>
+          <h1>
+            My name is <span>MILAN</span> and I'm a DEVELOPER, GAMER and a GEEK
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-6 offset-md-6 mt-3 content-text-l">
+          <h4>I like to create interesting things for web.</h4>
+          <p class="">
+            <br />
+            While i don't lack creativity, I may lack a bit of professional
+            experience. Going to change that soon. I've started playing with
+            HTML and CSS in early 2000's, but life took me on a totally
+            different path. Although, love for design and web development never
+            faded. If you are interested to learn more about me, or want to talk
+            about your next project, follow links below.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
