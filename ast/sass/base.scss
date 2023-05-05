@@ -163,13 +163,13 @@ section {
     background-color: $light-cyan;
     color: $gunmetal;
     transform: rotate(-2deg);
-    padding: 8% 4%;
+    padding: 6% 4%;
     margin-top: -6px;
     margin-bottom: 10vw;
     font-size: clamp(2rem, 1.1923rem + 2.2436vw, 2.875rem);
     border-radius: 16px;
     @include md {
-      padding: 3% 2.5%;
+      padding: 2% 2.5%;
       font-size: clamp(2rem, 1.1923rem + 2.2436vw, 2.875rem);
       margin-bottom: 10vw;
     }
@@ -255,8 +255,8 @@ article {
 
 .gal {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-columns: 2;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40vh 25vh;
   grid-gap: 1rem;
 
   &__1-1 {
@@ -290,5 +290,16 @@ article {
   height: 2rem;
   @include md {
     height: 3rem;
+  }
+}
+
+.link-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid $light-cyan;
+  &::before {
+    position: absolute;
+    content: "";
   }
 }
