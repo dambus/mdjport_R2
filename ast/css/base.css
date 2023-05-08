@@ -237,11 +237,28 @@ article {
   position: relative;
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  border: 1px solid #daf0ee;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
-.link-btn::before {
+.link-btn i {
   position: absolute;
-  content: "";
+  color: #94d1be;
+  font-size: 0.8125rem;
+  margin-left: 6px;
+  transform-origin: left;
+  transform: translateX(0);
+  transition: all 0.25s ease;
+  top: 31.5%;
+}
+.link-btn:hover {
+  transition: all 0.25s ease;
+  color: #9db5b2;
+}
+.link-btn:hover i {
+  transform: translateX(6px) scale(1.2);
+  top: 31%;
 }
 
 /*# sourceMappingURL=base.css.map */
