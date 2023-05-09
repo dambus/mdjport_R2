@@ -23,15 +23,38 @@
   position: relative;
 }
 
+// .active {
+//   background-color: none;
+//   color: $ash-gray;
+//   transform: rotate(-2deg);
+//   &::before {
+//     border: 1px solid $ash-gray;
+//     transform: rotate(-2deg);
+//     border-radius: 6px;
+//     z-index: -1;
+//     transition: all 0.2s;
+//   }
+// }
+
 .active {
+  text-transform: uppercase;
+  transform: scale(0.92);
+  transform-origin: left;
+  position: relative;
   background-color: none;
   color: $ash-gray;
-  transform: rotate(-2deg);
-  &::before {
-    border: 1px solid $ash-gray;
-    transform: rotate(-2deg);
-    border-radius: 6px;
-    z-index: -1;
-    transition: all 0.2s;
-  }
+  // transition: all 0.05s ease-in;
+  transition: none !important;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 50% !important;
+  //   height: 2px;
+  //   top: 0;
+  //   // left: 20%;
+  //   background-color: $tiffany-blue;
+  //   transition: all 0.3s;
+  // }
+  // transform: rotate(-2deg);
 }
