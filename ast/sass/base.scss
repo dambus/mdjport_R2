@@ -1,62 +1,9 @@
+@import "bpoints";
+@import "colors";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap");
 
 $font-main: "Source Sans Pro", sans-serif;
 $nav-height: 6rem;
-
-// COLORS
-$white: #ffffffff;
-$ash-gray: #9db5b2ff;
-$light-cyan: #daf0eeff;
-$tiffany-blue: #94d1beff;
-$gunmetal: #202d3aff;
-
-// BREAKPOINTS
-$screen-xs-min: 350px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-
-// small devices
-@mixin xs {
-  @media (min-width: $screen-xs-min) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media (min-width: $screen-sm-min) {
-    @content;
-  }
-}
-
-// Medium devices
-@mixin md {
-  @media (min-width: $screen-md-min) {
-    @content;
-  }
-}
-
-// Large devices
-@mixin lg {
-  @media (min-width: $screen-lg-min) {
-    @content;
-  }
-}
-
-// Extra large devices
-@mixin xl {
-  @media (min-width: $screen-xl-min) {
-    @content;
-  }
-}
-
-// Custom devices
-@mixin rwd($screen) {
-  @media (min-width: $screen) {
-    @content;
-  }
-}
 
 // CSS RESET
 /* Box sizing rules */

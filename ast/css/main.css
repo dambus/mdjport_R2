@@ -373,7 +373,6 @@ img.mobile-nav-items--logo {
   font-size: 2rem;
   margin-right: 6px;
   font-weight: 300;
-  transition: all 0.25s ease;
   letter-spacing: 1px;
   padding: 12px 8px;
 }
@@ -386,7 +385,6 @@ img.mobile-nav-items--logo {
   letter-spacing: 0px;
   font-weight: 300;
   color: #94d1be;
-  transition: transform 0.2s ease;
 }
 .header .nav .btn__nav:nth-child(1) {
   width: 5rem;
@@ -396,6 +394,9 @@ img.mobile-nav-items--logo {
 }
 .header .nav .btn__nav:nth-child(3) {
   width: 6.8rem;
+}
+.header .nav .btn__nav:nth-child(3):hover:not(.active) {
+  transform: translateX(-7px);
 }
 .header .nav__mobile {
   display: flex;
@@ -799,6 +800,102 @@ p.card-body {
 
 .badge_learning {
   background-color: yellowgreen;
+}
+
+.sidebar-left {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar-left {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    left: 6px;
+    transform: translate(0);
+  }
+}
+@media (min-width: 768px) {
+  .sidebar-left--content {
+    height: 100%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.sidebar-left--content a {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+.sidebar-left--content a:last-child() {
+  margin-bottom: none;
+}
+.sidebar-left--content a:hover {
+  opacity: 0.75;
+  color: inherit;
+}
+
+#modalContent {
+  background: #202d3a;
+  padding: 0;
+  margin: 0;
+}
+#modalContent .modal-body {
+  padding: 1rem;
+}
+#modalContent .modal-footer {
+  border-top: none;
+}
+#modalContent .modal-footer .closeModal {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(218, 240, 238, 0.1);
+  padding: 0.25rem 0.5rem 0.25rem 2.15rem;
+  border-radius: 0.66rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+#modalContent .modal-footer .closeModal span i {
+  margin-top: 1px;
+  transform: translateX(0);
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+#modalContent .modal-footer .closeModal:hover {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.28s;
+  transition-delay: 0.02s;
+}
+#modalContent .modal-footer .closeModal:hover span i {
+  margin-top: 3px;
+  transform: translateX(-4.8rem) scale(1.5);
+  transition: transform 0.25s ease;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog,
+.modal-content {
+    min-width: 80vw;
+  }
+}
+
+.contact-form {
+  background-color: #202d3a;
+  width: 100%;
+}
+.contact-form h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contact-form h4 {
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=main.css.map */

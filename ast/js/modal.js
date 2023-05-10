@@ -15,7 +15,7 @@ const getData = function (link) {
   };
 };
 
-const projectsModal = new bootstrap.Modal("#projectsModal", {
+const projectsModal = new bootstrap.Modal("#multiModal", {
   keyboard: true,
   backdrop: "static",
 });
@@ -30,6 +30,7 @@ modBtn.forEach((element) => {
   element.addEventListener("click", function () {
     {
       let link = element.getAttribute("data-mod-content");
+      console.log(link);
       getData(link);
       projectsModal.toggle();
     }

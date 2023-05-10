@@ -54,7 +54,7 @@ function populateProjects() {
               <a
                 class="mod-btn"
                 data-bs-toggle="modal"
-                data-bs-target="#projectsModal"
+                data-bs-target="#multiModal"
                 data-mod-content="${project.infoHandle}"
               >
                   <i class="fa-solid fa-circle-info"></i>
