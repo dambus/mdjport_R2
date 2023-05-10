@@ -64,8 +64,8 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -844,10 +844,71 @@ p.card-body {
   margin: 0;
 }
 #modalContent .modal-body {
-  padding: 1rem;
+  min-height: 85vh;
+  background: linear-gradient(180deg, #282a73 50%, #262b64 55%, #202d3a 65%);
+}
+#modalContent .modal-body--container {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  #modalContent .modal-body--container {
+    padding: 1rem 1rem;
+  }
+}
+#modalContent .modal-body--container .modal-cover {
+  margin-top: 0;
+}
+#modalContent .modal-body--container .modal-cover .landing-pic img {
+  position: relative;
+  max-height: 66vh;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  #modalContent .modal-body--container .modal-cover .landing-pic img {
+    max-height: 50vh;
+    border-radius: 16px;
+  }
+}
+#modalContent .modal-body--container .modal-cover .landing-pic--heading {
+  margin: -55% 10% 10% 45%;
+  font-size: 2rem;
+  position: absolute;
+  text-align: right;
+  background-color: rgba(32, 45, 58, 0.66);
+  padding: 8px;
+}
+@media (min-width: 576px) {
+  #modalContent .modal-body--container .modal-cover .landing-pic--heading {
+    margin: 0;
+    position: relative;
+    margin-top: -4.6rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+  }
+}
+#modalContent .modal-body--container .modal-first-row {
+  margin-top: 25%;
+}
+@media (min-width: 576px) {
+  #modalContent .modal-body--container .modal-first-row {
+    margin-top: 15%;
+  }
+}
+#modalContent h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#modalContent h4 {
+  font-weight: 100;
 }
 #modalContent .modal-footer {
   border-top: none;
+  position: sticky !important;
+  bottom: 0;
+  right: 0;
 }
 #modalContent .modal-footer .closeModal {
   outline: none;
@@ -855,7 +916,7 @@ p.card-body {
   font-size: 1rem;
   color: white;
   background-color: rgba(218, 240, 238, 0.1);
-  padding: 0.25rem 0.5rem 0.25rem 2.15rem;
+  padding: 0.33rem 0.5rem 0.33rem 2.15rem;
   border-radius: 0.66rem;
   text-transform: uppercase;
   font-weight: 100;
@@ -863,7 +924,7 @@ p.card-body {
 #modalContent .modal-footer .closeModal span i {
   margin-top: 1px;
   transform: translateX(0);
-  margin-left: 4px;
+  margin-left: 6px;
   transition: transform 0.25s ease;
 }
 #modalContent .modal-footer .closeModal:hover {
@@ -874,13 +935,13 @@ p.card-body {
 }
 #modalContent .modal-footer .closeModal:hover span i {
   margin-top: 3px;
-  transform: translateX(-4.8rem) scale(1.5);
+  transform: translateX(-5.1rem) scale(1.5);
   transition: transform 0.25s ease;
 }
 
 @media (min-width: 576px) {
   .modal-dialog,
-.modal-content {
+  .modal-content {
     min-width: 80vw;
   }
 }
@@ -888,14 +949,6 @@ p.card-body {
 .contact-form {
   background-color: #202d3a;
   width: 100%;
-}
-.contact-form h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.contact-form h4 {
-  font-weight: 100;
 }
 
 /*# sourceMappingURL=main.css.map */
