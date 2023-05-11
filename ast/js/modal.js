@@ -23,6 +23,7 @@ const projectsModal = new bootstrap.Modal("#multiModal", {
 closeButton.forEach(function (btn) {
   btn.addEventListener("click", function () {
     projectsModal.toggle();
+    document.querySelector(".modal-body").innerHTML = "";
   });
 });
 
@@ -30,7 +31,6 @@ modBtn.forEach((element) => {
   element.addEventListener("click", function () {
     {
       let link = element.getAttribute("data-mod-content");
-      console.log(link);
       getData(link);
       projectsModal.toggle();
     }

@@ -1,7 +1,3 @@
-.test-border {
-  border: 1px solid white;
-}
-
 .mobile-nav-items {
   display: flex;
   flex-direction: column;
@@ -12,7 +8,7 @@
   top: 0;
   width: 100%;
   right: 0%;
-  height: calc(100vh - 70px);
+  height: calc(100lvh - 60px);
   background: $ash-gray;
   transition: all 0.5s;
 

@@ -64,8 +64,8 @@ select {
     scroll-behavior: auto;
   }
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -261,10 +261,6 @@ article {
   top: 31%;
 }
 
-.test-border {
-  border: 1px solid white;
-}
-
 .mobile-nav-items {
   display: flex;
   flex-direction: column;
@@ -275,7 +271,7 @@ article {
   top: 0;
   width: 100%;
   right: 0%;
-  height: calc(100vh - 70px);
+  height: calc(100lvh - 60px);
   background: #9db5b2;
   transition: all 0.5s;
 }
@@ -713,6 +709,7 @@ img.mobile-nav-items--logo {
 p.card-body {
   margin: 1rem 0;
   font-weight: 300;
+  line-height: 1.3;
 }
 
 .mybutton {
@@ -858,9 +855,11 @@ p.card-body {
 #modalContent .modal-body--container .modal-cover {
   margin-top: 0;
 }
-#modalContent .modal-body--container .modal-cover .landing-pic img {
+#modalContent .modal-body--container .modal-cover .landing-pic {
   position: relative;
-  max-height: 66vh;
+}
+#modalContent .modal-body--container .modal-cover .landing-pic img {
+  max-height: 50vh;
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
@@ -869,23 +868,28 @@ p.card-body {
   #modalContent .modal-body--container .modal-cover .landing-pic img {
     max-height: 50vh;
     border-radius: 16px;
+    filter: blur(1px);
+    object-position: 10% 25%;
+    object-fit: cover;
   }
 }
-#modalContent .modal-body--container .modal-cover .landing-pic--heading {
-  margin: -55% 10% 10% 45%;
-  font-size: 2rem;
+#modalContent .modal-body--container .modal-cover .landing-pic .landing-pic--heading {
   position: absolute;
+  bottom: 0.75rem;
+  width: 66%;
+  right: 0.75rem;
+  border: 1px solid rgba(148, 209, 190, 0.3);
   text-align: right;
   background-color: rgba(32, 45, 58, 0.66);
   padding: 8px;
 }
-@media (min-width: 576px) {
-  #modalContent .modal-body--container .modal-cover .landing-pic--heading {
-    margin: 0;
-    position: relative;
-    margin-top: -4.6rem;
-    margin-right: 2rem;
-    padding-right: 2rem;
+#modalContent .modal-body--container .modal-cover .landing-pic .landing-pic--heading h1 {
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  #modalContent .modal-body--container .modal-cover .landing-pic .landing-pic--heading {
+    width: 88%;
+    left: 0.66rem;
   }
 }
 #modalContent .modal-body--container .modal-first-row {
@@ -903,6 +907,33 @@ p.card-body {
 }
 #modalContent h4 {
   font-weight: 100;
+}
+#modalContent .row-card h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  #modalContent .row-card h1 {
+    text-align: left;
+  }
+}
+#modalContent .row-card .image-rounded {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #modalContent .row-card .image-rounded {
+    justify-content: end;
+    padding-right: 5rem;
+  }
+}
+#modalContent .row-card .image-rounded img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 #modalContent .modal-footer {
   border-top: none;
@@ -935,13 +966,13 @@ p.card-body {
 }
 #modalContent .modal-footer .closeModal:hover span i {
   margin-top: 3px;
-  transform: translateX(-5.1rem) scale(1.5);
+  transform: translateX(-5rem) scale(1.25);
   transition: transform 0.25s ease;
 }
 
 @media (min-width: 576px) {
   .modal-dialog,
-  .modal-content {
+.modal-content {
     min-width: 80vw;
   }
 }
