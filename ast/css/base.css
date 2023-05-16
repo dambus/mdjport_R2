@@ -118,7 +118,6 @@ section {
 
 .section__content {
   margin-top: 2rem;
-  display: flex;
 }
 .section__content--left {
   flex: 50%;
